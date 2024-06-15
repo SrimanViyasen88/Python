@@ -1,0 +1,5 @@
+x=int(input())
+y=x*0.05
+z=x*0.18
+t=x+y+z
+print("The tax is"," %.2f" % y," and the tip is"," %.2f" % z,", making the total"," %.2f" % t,sep='') 
