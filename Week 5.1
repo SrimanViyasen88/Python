@@ -1,7 +1,15 @@
-str1=input()
-str2=input()
-index=str1.find(str2)
-if(index!=1):
-     print(index)
-else:
-    print("-1")
+s1=input()
+s2=input()
+s3=''
+l=[]
+for i in s1:
+    l.append(i)
+for i in s2:
+    if(i in l):
+        count=s1.count(i)
+        for j in range(count):
+            l.remove(i)
+
+for i in l:
+    s3+=i
+print(s3)
