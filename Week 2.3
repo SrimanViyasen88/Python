@@ -1,0 +1,5 @@
+x=int(input())
+for i in range(3):
+    x+=x*0.04
+    print("Balance as of end of Year {}: ".format(i+1),end='')
+    print("$","%.2f" % x,'.',sep='')
